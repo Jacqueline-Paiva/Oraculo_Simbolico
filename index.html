@@ -12,7 +12,11 @@
     <p class="subtitulo">Escolha um número de 1 a 50 e receba uma mensagem do universo (ou da Jac).</p>
 
     <input type="number" id="numero" min="1" max="50" placeholder="Digite um número...">
-    <button onclick="consultarOraculo()">Consultar</button>
+    
+    <div class="botoes">
+      <button onclick="consultarOraculo()">Consultar</button>
+      <button onclick="limparCampos()">Limpar</button>
+    </div>
 
     <div id="resposta" class="resposta"></div>
   </div>
