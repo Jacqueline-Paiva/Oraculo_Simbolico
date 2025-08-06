@@ -62,8 +62,14 @@ function consultarOraculo() {
     return;
   }
 function limparCampos() {
-  document.getElementById("numero").value = "";
-  document.getElementById("resposta").textContent = "";
+  const input = document.getElementById("numero");
+  const respostaDiv = document.getElementById("resposta");
+
+  if (input && respostaDiv) {
+    input.value = "";
+    respostaDiv.textContent = "";
+    input.focus();
+  }
 }
 
   const mensagem = mensagens[valor] || "Esse número ainda não tem resposta. Talvez seja você quem deve escrevê-la.";
