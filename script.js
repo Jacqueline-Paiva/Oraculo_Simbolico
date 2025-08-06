@@ -61,6 +61,10 @@ function consultarOraculo() {
     respostaDiv.textContent = "Por favor, digite um número entre 1 e 50.";
     return;
   }
+function limparCampos() {
+  document.getElementById("numero").value = "";
+  document.getElementById("resposta").textContent = "";
+}
 
   const mensagem = mensagens[valor] || "Esse número ainda não tem resposta. Talvez seja você quem deve escrevê-la.";
   respostaDiv.textContent = mensagem;
