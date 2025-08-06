@@ -61,17 +61,15 @@ function consultarOraculo() {
     respostaDiv.textContent = "Por favor, digite um número entre 1 e 50.";
     return;
   }
+const mensagem = mensagens[valor] || "Esse número ainda não tem resposta. Talvez seja você quem deve escrevê-la.";
+  respostaDiv.textContent = mensagem;
+}
+
 function limparCampos() {
   const input = document.getElementById("numero");
   const respostaDiv = document.getElementById("resposta");
 
-  if (input && respostaDiv) {
-    input.value = "";
-    respostaDiv.textContent = "";
-    input.focus();
-  }
-}
-
-  const mensagem = mensagens[valor] || "Esse número ainda não tem resposta. Talvez seja você quem deve escrevê-la.";
-  respostaDiv.textContent = mensagem;
+  input.value = "";
+  respostaDiv.textContent = "";
+  input.focus();
 }
