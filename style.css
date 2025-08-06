@@ -81,3 +81,19 @@ button:hover {
   min-height: 60px;
 }
 
+.subtitulo {
+  font-style: italic;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.linha-jac {
+  display: block;
+  margin-top: 5px;
+  font-weight: normal;
+  font-size: 1em;
+  color: #7e57c2; /* tom roxo místico */
+}
+
